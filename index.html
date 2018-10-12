@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Drive an collect</title>
+	<link rel="stylesheet" href="css/style.css">
+	
+	
+</head>
+<body>
+	<iframe src="css/audio/nazad-v-buduschee-ost-tadam-tadadam-tadadam.mp3" allow="autoplay" id="iframeAudio"></iframe>
+	<div class="sound"></div>
+	<div id="start-page">
+		<h2>drive and collect</h2>
+		<p>Go ahead and collect coins, but beware of the pits. Each journey through the pit takes you one life, you have only 5. On the way, you will come across a repair that will restore you one life. If you hit the wall - the game will end. Good luck!</p>
+		<span id="inscription_start">press ENTER to start</span>
+	</div>
+	<div id="end-page">
+		<h2>game over</h2>
+		<p>You collected: <span id="end_coins">0</span> coins</p>
+		<button onclick="restart()" id="inscription_end">Click to try again</button>
+	</div>
+	<div id="container">
+		<div class="panel">
+			<div id="panel_hp">
+				<div class="panel_hp-heart"></div>
+				<div class="panel_hp-heart"></div>
+				<div class="panel_hp-heart"></div>
+				<div class="panel_hp-heart"></div>
+				<div class="panel_hp-heart"></div>
+			</div>
+			<div id="panel_score">Монет:<span id="score">0</span></div>
+		</div>	
+		<div id="road">
+			<div class="line">
+				<div id="line_0_cell_0"></div>
+				<div id="line_0_cell_1"></div>
+				<div id="line_0_cell_2"></div>
+				<div id="line_0_cell_3"></div>
+				<div id="line_0_cell_4"></div>
+				<div id="line_0_cell_5"></div>
+				<div id="line_0_cell_6"></div>
+				<div id="line_0_cell_7"></div>
+				<div id="line_0_cell_8"></div>
+				<div id="line_0_cell_9"></div>
+				<div id="line_0_cell_10"></div>
+				<div id="line_0_cell_11"></div>
+				<div id="line_0_cell_12"></div>
+				<div id="line_0_cell_13"></div>
+				<div id="line_0_cell_14"></div>
+			</div>
+			<div class="line">
+				<div id="line_1_cell_0"></div>
+				<div id="line_1_cell_1"></div>
+				<div id="line_1_cell_2"></div>
+				<div id="line_1_cell_3"></div>
+				<div id="line_1_cell_4"></div>
+				<div id="line_1_cell_5"></div>
+				<div id="line_1_cell_6"></div>
+				<div id="line_1_cell_7"></div>
+				<div id="line_1_cell_8"></div>
+				<div id="line_1_cell_9"></div>
+				<div id="line_1_cell_10"></div>
+				<div id="line_1_cell_11"></div>
+				<div id="line_1_cell_12"></div>
+				<div id="line_1_cell_13"></div>
+				<div id="line_1_cell_14"></div>
+			</div>
+			<div class="line">
+				<div id="line_2_cell_0"></div>
+				<div id="line_2_cell_1"></div>
+				<div id="line_2_cell_2"></div>
+				<div id="line_2_cell_3"></div>
+				<div id="line_2_cell_4"></div>
+				<div id="line_2_cell_5"></div>
+				<div id="line_2_cell_6"></div>
+				<div id="line_2_cell_7"></div>
+				<div id="line_2_cell_8"></div>
+				<div id="line_2_cell_9"></div>
+				<div id="line_2_cell_10"></div>
+				<div id="line_2_cell_11"></div>
+				<div id="line_2_cell_12"></div>
+				<div id="line_2_cell_13"></div>
+				<div id="line_2_cell_14"></div>
+			</div>
+			<div id="car" class="car_position_index_0"></div>
+			<div id="fire" class="car_position_index_0"></div>
+			<div class="line">
+				<div id="line_3_cell_0"></div>
+				<div id="line_3_cell_1"></div>
+				<div id="line_3_cell_2"></div>
+				<div id="line_3_cell_3"></div>
+				<div id="line_3_cell_4"></div>
+				<div id="line_3_cell_5"></div>
+				<div id="line_3_cell_6"></div>
+				<div id="line_3_cell_7"></div>
+				<div id="line_3_cell_8"></div>
+				<div id="line_3_cell_9"></div>
+				<div id="line_3_cell_10"></div>
+				<div id="line_3_cell_11"></div>
+				<div id="line_3_cell_12"></div>
+				<div id="line_3_cell_13"></div>
+				<div id="line_3_cell_14"></div>
+			</div>
+		</div>
+	</div>	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/my-js.js"></script>
+</body>
+</html>

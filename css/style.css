@@ -1,0 +1,197 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: url(pic/BTTF1.2.jpg) no-repeat;
+}
+
+#container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	flex-wrap: wrap;
+}
+
+#road {
+	width: 80%;
+	height: 45%;
+	border: 3px solid black;
+	position: relative;
+	background: url(pic/regyzah.png);
+}
+
+.line {
+	height: 25%;
+	display: flex;
+	box-sizing: border-box;
+}
+
+.line:not(:last-child) {
+	border-bottom: 3px dashed white;
+}
+
+.line div {
+	height: 100%;
+	width: 6.667%;
+}
+
+#car {
+	background: url(pic/delorian1.png) center;
+	background-size: 100% 100%;
+	position: absolute;
+	height: 25%;
+	width: 10%;
+	left: -0.5%;
+	z-index: 9;
+	transition: left 0.7s, top .2s;;
+}
+
+#fire {
+	background: url(pic/fire.png) center;
+	position: absolute;
+	left: 0;
+	height: 25%;
+	width: 3%;
+	display: none;
+}
+
+.cell_type_0 {
+
+}
+
+.cell_type_1 {
+	background: url(pic/coin.png) no-repeat center;
+
+}
+
+.cell_type_2 {
+	background: url(pic/technology-5.png) no-repeat center;
+	background-size: 100% 100%;
+}
+
+.cell_type_3 {
+	background: url(pic/hole-clipart-png-3.png) no-repeat center;
+	background-size: 100% 100%;
+}
+
+.cell_type_4 {
+	background: url(pic/w256h2561372777082Tools.png) no-repeat center;
+	background-size: 100% 100%;
+}
+
+.car_position_index_0 {
+	top: 0;
+}
+
+.car_position_index_1 {
+	top: 25%;
+}
+
+.car_position_index_2 {
+	top: 50%;
+}
+
+.car_position_index_3 {
+	top: 75%;
+}
+
+.panel {
+	display: flex;
+	width: 80%;
+	align-items: center;
+}
+
+#panel_hp {
+	display: flex;
+	width: 20%;
+	margin-right: 30px;
+}
+
+#panel_hp div {
+	width: 30px;
+	height: 30px;
+	background: url(pic/heart.png) no-repeat center;
+	margin-right: 7px;
+}
+
+#panel_score {
+	font-size: 30px;
+	color: white;
+}
+
+#score {
+	margin-left: 3px;
+}
+
+#start-page {
+	position: absolute;
+	width: 30%;
+	background: url(pic/17_10006_oboi_svetlyj_fon_1920x1080.jpg) no-repeat;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	text-align: center;
+	padding: 10px 10px 50px 10px;
+	box-sizing: border-box;
+	border: 2px solid black;
+}
+
+#start-page h2,
+#end-page h2 {
+	text-transform: uppercase;
+	font-size: 40px;
+	margin-bottom: 50px;
+}
+
+#start-page p,
+#end-page p {
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+#start-page span,
+#end-page span {
+	font-size: 25px;
+	color: white;
+}
+
+.visible {
+	visibility: hidden;
+}
+
+#end-page {
+	position: absolute;
+	width: 30%;
+	background: url(pic/39a27cf46dfb5e5e2788c82a37f2bdd7.jpg);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	text-align: center;
+	padding: 10px 10px 50px 10px;
+	box-sizing: border-box;
+	display: none;
+	border: 2px solid black;
+}
+
+#restart {
+	font-size: 20px;
+}
+
+#iframeAudio {
+	display: none;
+}
+
+.sound {
+	width: 40px;
+	height: 40px;
+	background: url(pic/sound.png);
+	position: absolute;
+	top: 3%;
+	left: 3%;
+}
+
+.mute {
+	background-position: 40px 0;
+}
